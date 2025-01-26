@@ -17,5 +17,5 @@ public class ParfumController extends CrudController<Parfum, Integer> {
 		super(service);
 		this.parfumService = service;
 	}
-
+	
 }

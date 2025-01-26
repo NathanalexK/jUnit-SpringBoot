@@ -13,7 +13,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/test")
-public class TestController {
+public class TestController{
 
     private final VendeurService vendeurService;
 

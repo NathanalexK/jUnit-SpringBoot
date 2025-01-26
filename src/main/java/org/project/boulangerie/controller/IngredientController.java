@@ -46,7 +46,7 @@ public class IngredientController extends NxController<Ingredient, Integer> {
     }
 
     @GetMapping("/list")
-    public ModelAndView showList(@RequestParam MultiValueMap params) {
+    public ModelAndView showList(@RequestParam MultiValueMap<String, Object> params) {
         ModelAndView modelAndView = getModelAndView("ingredient/list");
         this.generateDataTable(modelAndView, params);
         modelAndView.addObject("showCols", "nomIngredient,uniteLib,prixAchat");
